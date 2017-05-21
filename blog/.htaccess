@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^blog\.thegrateapp\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.blog\.thegrateapp\.com$
+RewriteRule ^/?$ "http\:\/\/thegrateapp\.blogspot\.co\.za" [R=301,L]
+

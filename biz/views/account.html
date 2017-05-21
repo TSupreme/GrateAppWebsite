@@ -1,0 +1,138 @@
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/" ng-click="SetPage('dashboard')">Home</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+              
+        <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+              <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
+               <li><a href="#/reports" class="glyphicon glyphicon-euro" ng-click="SetPage('reports')">  REPORTS</a></li> 
+              
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>  
+          </ul>
+        </div><!--/.nav-collapse -->
+          
+      </div>
+    </div>
+<div class="container_login">
+        <div class="row">
+            
+            <div class="col-md-6">
+  
+                    <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Restaurant Owners Details</h3>               
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                              
+                                <div class="form-group">
+                                  <span>Name</span>
+                                         <div class="form-control">
+                                            
+                                           <output type="text" name="owner_name" id="owner_name"> 
+                                        </div> 
+                                             <span>Surname</span>
+                                        <div class="form-control">
+                                           <output type="text"  placeholder="Surname" name="owner_lname" id="owner_lname"> 
+                                        </div> 
+                                            <span>Email</span>
+                                        <div class="form-control">
+                                           <output type="email"  placeholder="Email" name="owner_email" id="owner_email"> 
+                                        </div> 
+                                         <span>Owner Phone</span>
+                                        <div class="form-control">
+                                           <output type="text"  placeholder="Name" name="owner_phone" id="owner_phone"> 
+                                        </div> 
+                                </div>
+                                             <a href="#/Details" ng-click="SetPage('')" class="btn btn-lg btn-success btn-block">Edit</a>
+                             </fieldset>                                      
+                           </form>      
+                        </div>
+                    </div>
+            </div>
+        </div>
+         
+                           
+                
+                        
+            
+                        
+                <div class="col-md-6"> 
+                <div class="login-panel panel panel-default">
+                 <div class="panel-heading">
+                        <h3 class="panel-title"> Employees with Access</h3>
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                               <div class="form-group">
+                                        <span>Name</span>
+                                         <div class="form-control">
+                                           <output type="text" name="employee_name" id="employee_name"> 
+                                        </div> 
+                                        <span>Surname</span>
+                                        <div class="form-control">
+                                           <output type="text" name="employee_lname" id="employee_lname"> 
+                                        </div> 
+                                            <span>Email</span>
+                                        <div class="form-control">
+                                           <output type="email" name="employee_email" id="employee_email"> 
+                                        </div> 
+                                            <span>Phone Number</span>
+                                        <div class="form-control">
+                                           <output type="text"  name="employee_phone" id="employee_phone"> 
+                                        </div> 
+                                            <span>Title</span>
+                                        <div class="form-control">
+                                           <output type="text"  name="employee_title" id="employee_title"> 
+                                        </div>     
+                                </div>   
+                                      <a href="#/Details" ng-click="SetPage('')" class="btn btn-lg btn-success btn-block">Add</a>
+                              
+                                
+         
+                            </fieldset>
+                        </form>
+                       </div>
+                      
+            </div>
+                                </div>
+                                </div>
+                        
+                        
+            <div class="col-md-4"> 
+                        <div class="login-panel panel panel-default">
+                 <div class="panel-heading">
+                        <h3 class="panel-title"> Account Balance</h3>
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>                       
+                                 <div class="form-group">
+                                     <span>Amount</span>
+                                    <output class="form-control" placeholder="Balance" name="balance" id="balance" type="number">
+                                </div>
+                                    
+                                
+                                    <a href="#/payment" ng-click="SetPage('pay')" class="btn btn-lg btn-success btn-block">Pay</a>
+                         
+                           
+                            </fieldset>
+                        </form>
+                       </div>
+                      
+            </div>
+                            </div>
+                </div>
+                        
+ </div>
+
+                                        
+

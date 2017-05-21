@@ -1,0 +1,170 @@
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/" ng-click="SetPage('dashboard')">Home</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+              
+           <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+              <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
+               <li><a href="#/reports" class="glyphicon glyphicon-euro" ng-click="SetPage('reports')">  REPORTS</a></li> 
+              
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>    
+          </ul>
+        </div><!--/.nav-collapse -->
+          
+      </div>
+</div>
+<div class="container_login">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Claimed Restaurant</h3>               
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                        <span>Restaurant Name</span>
+                                         <div class="form-control">
+                                           <output type="text"  name="restaarant_name" id="restaurant_name"> 
+                                        </div>
+                                    
+                                             
+                                        <span>Restaurant Location</span>
+                                        <div class="form-control">
+                                           <output type="text" name="restuarant_location" id="restaurant_location"> 
+                                        </div> 
+                                                    
+                                    
+                                </div>
+                                               <a href="#/restaurant" ng-click="SetPage('')" class="btn btn-link">Edit</a>         
+                                </fieldset>        
+                              
+                           </form>   
+                                             
+                                  
+                              
+                        </div>
+                    </div>
+            </div>
+        </div>
+                        
+                        
+            
+                        
+                <div class="col-md-6"> 
+                <div class="login-panel panel panel-default">
+                 <div class="panel-heading">
+                        <h3 class="panel-title"> Deliveries</h3>
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <span>Does your restaurant make deliveries</span>     
+                            
+                                          <div class="form-group">
+                                          
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="deliver_yes" checked>Yes
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="deliver_no">No
+                                            </label>
+                                            
+                                        </div>
+                         
+         
+                            </fieldset>
+                        </form>
+                       </div>
+                      
+                </div>
+                    </div>
+                            </div>
+                        
+                        
+                <div class="col-md-6"> 
+                <div class="login-panel panel panel-default">
+                 <div class="panel-heading">
+                        <h3 class="panel-title"> Reservations</h3>
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                               <span>Does your restaurant accept online Reservations</span>     
+                            
+                                          <div class="form-group">
+                                          
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="reservations_yes" checked>Yes
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="reservations_no">No
+                                            </label>
+                                            
+                                        </div>
+                                 <div class="form-group">
+                                    <input class="form-control" placeholder="Reservations Email Address" name="reservations_email" id="reservations_email"type="email">
+                                </div>
+                                    <div class="form-group">
+                                    <input class="form-control" placeholder="Reservations Phone Number" name="reservations_number" id="reservations_number"type="text">
+                                </div>
+                                
+                                    <a href="#/reservations" ng-click="SetPage('')" class="btn btn-link">View Reservations</a>
+                         
+                           
+                            </fieldset>
+                        </form>
+                       </div>
+                      
+            </div>
+            </div>
+            </div>
+                        
+            <div class="col-md-4"> 
+                         <div class="login-panel panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"> Coupons</h3>
+                                            <div class="panel-body">
+                                            <form role="form">
+                                                <fieldset>
+                                                    <span>Number Coupons claimed</span>
+                                                     <div class="form-group">
+                                                        <output  name="claimed_coupons" id="claimed_coupons"type="number">
+                                                    </div>
+                                                    <a href="#/coupons" ng-click="SetPage('')" class="btn btn-link">Claimed Coupons</a>
+                                                </fieldset>
+                                            </form>
+                                           </div>
+                      
+                                        </div>
+                             </div>
+            </div>
+                                        
+                       <div class="col-md-4"> 
+                                    <div class="login-panel panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Vouchers</h3>
+                                            <div class="panel-body">
+                                            <form role="form">
+                                                <fieldset>
+                                                    <span>Number Vouchers claimed</span>
+                                                     <div class="form-group">
+                                                        <output  name="claimed_vouchers" id="claimed_vouchers"type="number">
+                                                    </div>
+                                                    <a href="#/coupons" ng-click="SetPage('')" class="btn btn-link">Claimed vouchers</a>
+                                                </fieldset>
+                                            </form>
+                                           </div>
+                      
+                                        </div>
+                                        </div>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/" ng-click="SetPage('dashboard')">Home</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+              
+               <li><a href="#/profile" class="glyphicon glyphicon-user" ng-click="SetPage('profile')">  PROFILE</a></li> 
+              <li><a href="#/account" class="glyphicon glyphicon-euro" ng-click="SetPage('account')">  ACCOUNT</a></li> 
+                 <li><a href="#/notification" class="glyphicon glyphicon-envelope" ng-click="SetPage('notification')">  NOTIFICATION</a></li>  
+          </ul>
+        </div><!--/.nav-collapse -->
+          
+      </div>
+    </div>
+<div class="container_login">
+   
+ 
+        <div class="row">
+            <div class="col-md-4 ">
+            
+                    <div class="panel-heading">
+                        <h3 class="panel-title"> Search for previous coupon</h3>
+                   
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                              
+                                <div class="form-group">
+                                        <span>Type in Coupon name</span>
+                                         <div class="form-control">
+                                           
+                                          <a href="#/search" ng-click="SetPage('search_coupons')" class="btn btn-lg btn-success btn-block">Search</a>
+                                </div>      
+                                    
+                              
+                                </div>
+                           </form>      
+                        </div>
+                    </div>
+            </div>
+                
+                        
+            <div class="col-md-4 col-md-offset-1 "> 
+                 <div class="panel-heading">
+                        <h3 class="panel-title"> Create Coupon</h3>
+                        <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                               
+                            <span>Coupon Details</span>
+                                     <div class="form-group">
+                                    <input class="form-control" placeholder="Coupon Name" name="coupon_name" id="voucher_name"type="text">
+                                </div>
+                                     <div class="form-group">
+                                    <input class="form-control" placeholder="Coupon Short Description" name="coupon_description" id="oupon_description"type="text">
+                                </div>
+                                <Span>Coupon Validity</Span>
+                                  <div class="form-group">
+                                    <input class="form-control" placeholder="Start Date" name="coupon_start" id="coupon_start" type="date">
+                                </div>
+                                          <div class="form-group">
+                                    <input class="form-control" placeholder="End Date" name="coupon_end" id="coupon_end" type="date">
+                                </div>
+                                <span>Redemption Conditions</span>
+                                      <div class="form-group">
+                                    <input class="form-control" placeholder="Coupon Grate Points" name="coupon_points" id="coupon_points"type="text">
+                                </div>
+                                <span>Coupon Image</span>
+                                
+                                              <div class="form-group">
+                                                  <span>Coupon Image</span>
+                                    <input class="form-control" placeholder="Coupon Image" name="coupon_image" id="coupon_image" type="file">
+                                </div>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="#/coupon" ng-click="SetPage('coupon_add')" class="btn btn-lg btn-success btn-block">Add Coupon</a>
+                            </fieldset>
+                        </form>
+                       </div>
+                      
+            </div>
+        </div>
+ </div>
+    </div>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="grateapp" ng-controller="PropertyController" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+
+
+    <title>The Grate App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]
+    
+    <script src="assets/js/modernizr.js"></script>-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/" ng-click="SetPage('home')">Restaurants</a><img src="assets/img/GrateHorizontal.png" alt="Restaurants" style="width:120px;height:40px;">
+        </div>
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+              
+              <li><a href="#/login" class="glyphicon glyphicon-user" ng-click="SetPage('login')">  LOGIN</a></li> 
+              <li><a href="#/register" class="glyphicon glyphicon-log-in" ng-click="SetPage('register')">  REGISTER</a></li> 
+          
+  
+          </ul>
+        </div><!--/.nav-collapse -->
+          
+      </div>
+    </div>
+      <!--/.common pages -->
+    <div ng-include="'views/home.html'" ng-show="page=='home'"></div>
+    <div ng-include="'views/login.html'" ng-show="page=='login'"></div>
+    <div ng-include="'views/register.html'" ng-show="page=='register'"></div> 
+    <div ng-include="'views/pre_authentification.html'" ng-show="page=='pre_authentification'"></div>  
+     <div ng-include="'views/dashboard.html'" ng-show="page=='dashboard'"></div>  
+    <div ng-include="'views/profile.html'" ng-show="page=='profile'"></div>  
+             <div ng-include="'views/account.html'" ng-show="page=='account'"></div> 
+           <div ng-include="'views/pay.html'" ng-show="page=='pay'"></div> 
+       <div ng-include="'views/reports.html'" ng-show="page=='reports'"></div>  
+      <div ng-include="'views/notification.html'" ng-show="page=='notification'"></div>  
+            <!--/.restuarants-->
+       <div ng-include="'views/restaurant/restaurants.html'" ng-show="page=='restaurant'"></div>
+       <div ng-include="'views/restaurant/restaurant_claim.html'" ng-show="page=='claim_restaurant'"></div>   
+      <div ng-include="'views/restaurant/restaurant_edit.html'" ng-show="page=='edit_restaurant'"></div> 
+       <!--/.dishes-->
+      <div ng-include="'views/dishes_ratings/menuandratings.html'" ng-show="page=='menu_ratings'"></div> 
+         <div ng-include="'views/dishes_ratings/grate_ratings.html'" ng-show="page=='grate_ratings'"></div> 
+        <div ng-include="'views/dishes_ratings/view_restaurant_menu.html'" ng-show="page=='view_menu'"></div> 
+       <div ng-include="'views/dishes_ratings/editrestaurant_menu.html'" ng-show="page=='grate'"></div> 
+            <!--/.events-->
+          <div ng-include="'views/events/events.html'" ng-show="page=='events'"></div> 
+            <!--/.campaings-->
+      <div ng-include="'views/campaigns/campaigns.html'" ng-show="page=='campaigns'"></div>
+         <div ng-include="'views/campaigns/smscampaigns.html'" ng-show="page=='sms_campaign'"></div> 
+         <div ng-include="'views/campaigns/emailcampaigns.html'" ng-show="page=='email_campaign'"></div> 
+         <div ng-include="'views/campaigns/inappcampaigns.html'" ng-show="page=='inapp_campaigns'"></div> 
+         <div ng-include="'views/campaigns/pushcampaigns.html'" ng-show="page=='push_campaigns'"></div> 
+      
+ 
+          <!--/.featured dishes-->
+       <div ng-include="'views/featured/featured.html'" ng-show="page=='featured'"></div> 
+
+          <!--/.vouchers and coupons-->
+        <div ng-include="'views/vouchers_coupons/couponsandvouchers.html'" ng-show="page=='coupons_vouchers'"></div>           
+      <div ng-include="'views/vouchers_coupons/vouchers.html'" ng-show="page=='vouchers'"></div> 
+      <div ng-include="'views/vouchers_coupons/search_vouchers.html'" ng-show="page=='search_vouchers'"></div>    
+      <div ng-include="'views/vouchers_coupons/vouchers_add.html'" ng-show="page=='voucher_add'"></div>  
+      
+        <div ng-include="'views/vouchers_coupons/coupons.html'" ng-show="page=='coupons'"></div> 
+      <div ng-include="'views/vouchers_coupons/search_coupons.html'" ng-show="page=='search_coupons'"></div>    
+      <div ng-include="'views/vouchers_coupons/coupon_add.html'" ng-show="page=='coupon_add'"></div>    
+      
+      
+
+      
+	
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>About</h4>
+		 			<div class="hline-w"></div>
+		 			<p>We help restaurants engage with thier customers in a whole new way and unleash buckets of insight and build relationships, sound good? register now </p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Social Links</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 		
+		 		
+		 				<a href="https://twitter.com/theGrateApp"><i class="fa fa-twitter"></i></a>
+		 				<a href="https://www.instagram.com/the_grate_app/"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/theGrateApp"><i class="fa fa-facebook"></i></a>
+		 				<a href="https://www.youtube.com/channel/UCXH3C5TPaTVuk5iCevDVcyA?sub_confirmation=1"><i class="fa fa-youtube-play"></i></a>
+		 			</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>Where the Magic Happens</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				Kyalami Hills<br/>
+		 				Johannesburg<br/>
+		 				South Africa<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->
+	 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="scripts/grateapp.js"></script>
+
+  </body>
+</html>
